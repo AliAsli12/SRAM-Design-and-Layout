@@ -1,0 +1,4 @@
+SNM_HOLD = 454.1 [m]
+SNM_READ = 273.1 [m]
+SNM_WRITE = 273.1[m]
+

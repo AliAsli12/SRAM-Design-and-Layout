@@ -1,0 +1,40 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  lab3
+* Top Cell Name: Sram
+* View Name:     schematic
+* Netlisted on:  Jul  7 17:38:52 2024
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+*.GLOBAL gnd!
+
+*.PIN gnd!
+
+************************************************************************
+* Library Name: lab3
+* Cell Name:    Sram
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT Sram BL BLB GND Q Qbar VDD WL
+*.PININFO BL:B BLB:B GND:B Q:B Qbar:B VDD:B WL:B
+MM5 VDD Qbar Q VDD pch l=65.0n w=205.00n m=1
+MM3 Qbar Q VDD VDD pch l=65.0n w=205.00n m=1
+MM4 Qbar WL BLB GND nch l=65.0n w=205.00n m=1
+MM2 Qbar Q GND GND nch l=65.0n w=305.00n m=1
+MM1 GND Qbar Q GND nch l=65.0n w=305.00n m=1
+MM0 BL WL Q GND nch l=65.0n w=205.00n m=1
+.ENDS
+

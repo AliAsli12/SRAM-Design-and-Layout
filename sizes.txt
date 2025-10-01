@@ -1,0 +1,6 @@
+the decision to use specific sizes for NMOS and PMOS transistors in SRAM bit cells is critcal to balancing the read and write operation reliability and efficency
+
+during a read operation the aaccess transistor alow the cell to connect to the bit line this connection can distrup the stored data. to mauntain stability the pull-down NMOS transistor are made stronger compared to the access transistor
+
+for a write operation the cell must be able to overwrite the data stored in the SRAM cell here the access the cell transistor need to be strong enough to overpower the pull-up PMOS transistor that maintain the stored value
+
